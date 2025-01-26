@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Booking</title>
+    <link rel="stylesheet" href="BookingForm.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="home.html">Home</a>
+        <a href="aboutus.html">About us</a>
+        <a href="login.html">Login</a>
+        <img src="logo.jpg" alt="logo" class="nav-logo">
+    </div>
+    <div class="container">
+        <div id="booking" class="form-container">
+            <h2>Appointment Booking Form</h2>
+            <form id="appointmentForm">
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="Email" required>
+                <input type="tel" placeholder="Phone Number" pattern="[0-9]{10}" required>
+                <textarea placeholder="Address" rows="3" required></textarea>
+                <button type="submit">Book Appointment</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('appointmentForm').addEventListener('submit', function(event) {
+            event.preventDefault(); 
+            alert("Your appointment is booked!");
+            const formData = new FormData(event.target);
+            const data = Object.fromEntries(formData.entries());
+            console.log(data); 
+        });
+    </script>
+</body>
+</html>

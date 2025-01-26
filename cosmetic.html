@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DocAppointmentHub</title>
+    <link rel="stylesheet" href="generalSurgeries.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="home.html">Home</a>
+        <a href="aboutus.html">About us</a>
+        <a href="login.html">Login</a>
+        <img src="logo.jpg" alt="logo" class="nav-logo">
+    </div>
+
+    <div class="heading">
+        <h1>Our Expert Cosmetic Doctors</h1>
+    </div>
+
+    <div class="card">
+        <div class="doc-img">
+            <img src="cos1.png" alt="doctor1">
+        </div>
+        <div class="doc-details">
+            <p>Doctor Name: Sameer Khan <br> <br>Qualification: MBBS, MD in Dermatology <br> <br> Specialization: Cosmetic Dermatologist <br><br> Years of Experience: 12 years <br> <br> Working at: Apollo Hospitals <br> <br> Location: Hyderabad</p>
+        </div>
+        <div class="doc-app">
+            <a href="BookingForm.html ">
+                <button>Book an appointment</button>
+            </a>
+        </div>
+        <form onsubmit="bookAppointment(); return false;">
+            <label for="appointment-date">Choose your date:</label>
+            <input type="date" id="appointment-date" name="appointment-date" required><br><br>
+            <label for="appointment-time">Choose your time:</label>
+            <input type="time" id="appointment-time" name="appointment-time" required>
+        </form>
+    </div>
+
+    <div class="card">
+        <div class="doc-img">
+            <img src="cos2.png" alt="doctor2">
+        </div>
+        <div class="doc-details">
+            <p>Doctor Name: Rohit Mehta <br> <br>Qualification: MBBS, Fellowship in Cosmetic Surgery <br> <br> Specialization: Cosmetic Surgeon <br><br> Years of Experience: 10 years <br> <br> Working at: Kaya Skin Clinic <br> <br> Location: Bengaluru</p>
+        </div>
+        <div class="doc-app">
+            <a href="BookingForm.html ">
+                <button>Book an appointment</button>
+            </a>
+        </div>
+        <form onsubmit="bookAppointment(); return false;">
+            <label for="appointment-date">Choose your date:</label>
+            <input type="date" id="appointment-date" name="appointment-date" required><br><br>
+            <label for="appointment-time">Choose your time:</label>
+            <input type="time" id="appointment-time" name="appointment-time" required>
+        </form>
+    </div>
+
+    <div class="card">
+        <div class="doc-img">
+            <img src="cos3.png" alt="doctor3">
+        </div>
+        <div class="doc-details">
+            <p>Doctor Name: Priya Malhotra <br> <br>Qualification: MBBS, MD in Aesthetic Medicine <br> <br> Specialization: Aesthetic Physician <br><br> Years of Experience: 8 years <br> <br> Working at: VLCC Clinic <br> <br> Location: Mumbai</p>
+        </div>
+        <div class="doc-app">
+            <a href="BookingForm.html ">
+                <button>Book an appointment</button>
+            </a>
+        </div>
+        <form onsubmit="bookAppointment(); return false;">
+            <label for="appointment-date">Choose your date:</label>
+            <input type="date" id="appointment-date" name="appointment-date" required><br><br>
+            <label for="appointment-time">Choose your time:</label>
+            <input type="time" id="appointment-time" name="appointment-time" required>
+        </form>
+    </div>
+
+    <div class="card">
+        <div class="doc-img">
+            <img src="cos4.png" alt="doctor4">
+        </div>
+        <div class="doc-details">
+            <p>Doctor Name: Kavin <br> <br>Qualification: MBBS, MS in Plastic Surgery <br> <br> Specialization: Plastic Surgeon <br><br> Years of Experience: 7 years <br> <br> Working at: Fortis Hospitals <br> <br> Location: Pune</p>
+        </div>
+        <div class="doc-app">
+            <a href="BookingForm.html ">
+                <button>Book an appointment</button>
+            </a>
+        </div>
+        <form onsubmit="bookAppointment(); return false;">
+            <label for="appointment-date">Choose your date:</label>
+            <input type="date" id="appointment-date" name="appointment-date" required><br><br>
+            <label for="appointment-time">Choose your time:</label>
+            <input type="time" id="appointment-time" name="appointment-time" required>
+        </form>
+    </div>
+
+    <div class="card">
+        <div class="doc-img">
+            <img src="cos5.png" alt="doctor5">
+        </div>
+        <div class="doc-details">
+            <p>Doctor Name: Aditi Sharma <br> <br>Qualification: MBBS, Fellowship in Laser Treatments <br> <br> Specialization: Laser Specialist <br><br> Years of Experience: 6 years <br> <br> Working at: SkinLab Clinics <br> <br> Location: Delhi</p>
+        </div>
+        <div class="doc-app">
+            <a href="BookingForm.html ">
+                <button>Book an appointment</button>
+            </a>
+        </div>
+        <form onsubmit="bookAppointment(); return false;">
+            <label for="appointment-date">Choose your date:</label>
+            <input type="date" id="appointment-date" name="appointment-date" required><br><br>
+            <label for="appointment-time">Choose your time:</label>
+            <input type="time" id="appointment-time" name="appointment-time" required>
+        </form>
+    </div>
+
+    <div class="card">
+        <div class="doc-img">
+            <img src="cos6.png" alt="doctor6">
+        </div>
+        <div class="doc-details">
+            <p>Doctor Name: Neha Gupta <br> <br>Qualification: MBBS, MD in Dermatology <br> <br> Specialization: Cosmetic Dermatologist <br><br> Years of Experience: 4 years <br> <br> Working at: Oliva Skin & Hair Clinic <br> <br> Location: Chennai</p>
+        </div>
+        <div class="doc-app">
+            <a href="BookingForm.html ">
+                <button>Book an appointment</button>
+            </a>
+        </div>
+        <form onsubmit="bookAppointment(); return false;">
+            <label for="appointment-date">Choose your date:</label>
+            <input type="date" id="appointment-date" name="appointment-date" required><br><br>
+            <label for="appointment-time">Choose your time:</label>
+            <input type="time" id="appointment-time" name="appointment-time" required>
+        </form>
+    </div>
+
+    <div class="card">
+        <div class="doc-img">
+            <img src="cos7.png" alt="doctor7">
+        </div>
+        <div class="doc-details">
+            <p>Doctor Name: Anil Kapoor <br> <br>Qualification: MBBS, Fellowship in Hair Transplant Surgery <br> <br> Specialization: Hair Transplant Surgeon <br><br> Years of Experience: 15 years <br> <br> Working at: Advanced Hair Studio <br> <br> Location: Jaipur</p>
+        </div>
+        <div class="doc-app">
+            <a href="BookingForm.html ">
+                <button>Book an appointment</button>
+            </a>
+        </div>
+        <form onsubmit="bookAppointment(); return false;">
+            <label for="appointment-date">Choose your date:</label>
+            <input type="date" id="appointment-date" name="appointment-date" required><br><br>
+            <label for="appointment-time">Choose your time:</label>
+            <input type="time" id="appointment-time" name="appointment-time" required>
+        </form>
+    </div>
+
+    <div class="footer">&copy;Our mission is to enhance confidence and appearance by providing top-tier cosmetic solutions.<br><br>2024 DocAppointmentHub.<br><br> Created by Mahitha Priyanjali Reddy.</div>
+</body>
+</html>
